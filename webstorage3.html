@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Local Storage</title>
+</head>
+
+<h1>Local storage Example-3</h1>
+<script>
+function removeData()
+{
+localStorage.removeItem("name");
+localStorage.removeItem("Address");
+localStorage.removeItem("Phoneno");
+localStorage.removeItem("Email");
+document.write("To remove all the items at a time"+localStorage.clear());
+document.write("Data will be displayed in the next page");
+}
+</script>
+<input type=button value="click me" onclick=removeData()>
+</html>
